@@ -1,0 +1,80 @@
+<UWDataSource xmlns="x-schema:DataSourceSchema.xdr">
+	<DataSourceObject xmlns="x-schema:DataSourceSchema.xdr" ObjectID="0" MinRefreshInterval="10" RefreshInterval="3600" RequestTimeout="50" RequestGroupSize="30" BuildTimeServer="http://UISVR:80" SOAPServerWSDLExt="/Desktop/StorageProvider/ListRequests.wsdl" SOAPServerServiceName="ListRequests" SOAPServerPort="ListRequestsSoap" PageAutoResize="1" Trace="0" Title="" Version="2.4"/>
+	<DataObjects>
+		<WebObjectDefinitionDataObject ObjectID="-6" ProgID="HSCUWDataObjects.UWWebObjectDefinitionDataObject" TimeControlID="-1">
+			<WebObjects>
+			</WebObjects>
+		</WebObjectDefinitionDataObject>
+		<DatasourcesDataObject ObjectID="-5" ProgID="HSCUWDataObjects.UWDatasourcesDataObject" TimeControlID="-1">
+			<Dataset>
+				<Data SchemaType="History Item List">
+					<DataSource Name="DefaultPHD" NameSpace="DAS" LocalCurrentTime="#BADTIME#" TimeOffset="?"/>
+				</Data>
+				<Data SchemaType="History Item Values">
+					<DataSource Name="DefaultPHD" NameSpace="DAS" LocalCurrentTime="#BADTIME#" TimeOffset="?"/>
+				</Data>
+				<Data SchemaType="Generic">
+					<DataSource Name="DefaultPHD" NameSpace="DAS" LocalCurrentTime="#BADTIME#" TimeOffset="?"/>
+				</Data>
+			</Dataset>
+		</DatasourcesDataObject>
+		<ECCDataObject ObjectID="-4" ProgID="HSCUWDataObjects.UWECCDataObject" TimeControlID="-1">
+			<Data>
+				<ECC Version="3.0" DisplaySoftwareLink="0" ClientSoftwareDownload=""/>
+				<PageControl MinRefreshInterval="10"/>
+				<TimeControl MinRefreshInterval="5"/>
+				<QuickTrendControl Location=""/>
+				<TrendControl Location=""/>
+				<ErrorControl Location=""/>
+				<CommsErrorIndication BorderColor="#ff0000" BorderStyle="solid" BorderWidth="1"/>
+				<NullValueIndication BorderColor="#ff0000" BorderStyle="solid" BorderWidth="1"/>
+				<ReducedConfidenceIndication BorderColor="#ff0000" BorderStyle="solid" BorderWidth="1"/>
+				<ConfigErrorIndication BorderColor="#ff0000" BorderStyle="solid" BorderWidth="1"/>
+				<Culture ThreeLetterWindows="ENU"/>
+				<TraceDefaults>
+					<Trace Index="1" Color="#1272B2"/>
+					<Trace Index="2" Color="#628B2C"/>
+					<Trace Index="3" Color="#842060"/>
+					<Trace Index="4" Color="#00736A"/>
+					<Trace Index="5" Color="#79458E"/>
+					<Trace Index="6" Color="#BD571A"/>
+					<Trace Index="7" Color="#475C8F"/>
+					<Trace Index="8" Color="#C69A1F"/>
+					<Trace Index="9" Color="#45A8EA"/>
+					<Trace Index="10" Color="#98C260"/>
+					<Trace Index="11" Color="#B72478"/>
+					<Trace Index="12" Color="#61C1B8"/>
+					<Trace Index="13" Color="#AF7AC5"/>
+					<Trace Index="14" Color="#F58D4D"/>
+					<Trace Index="15" Color="#7C8CB5"/>
+					<Trace Index="16" Color="#FFD153"/>
+					<Trace Index="17" Color="#0A4166"/>
+					<Trace Index="18" Color="#385019"/>
+					<Trace Index="19" Color="#590042"/>
+					<Trace Index="20" Color="#00473B"/>
+					<Trace Index="21" Color="#452951"/>
+					<Trace Index="22" Color="#6C320F"/>
+					<Trace Index="23" Color="#273B7A"/>
+					<Trace Index="24" Color="#715812"/>
+					<Trace Index="25" Color="#739BB5"/>
+					<Trace Index="26" Color="#A2B686"/>
+					<Trace Index="27" Color="#E479B0"/>
+					<Trace Index="28" Color="#89B5B1"/>
+					<Trace Index="29" Color="#A086AB"/>
+					<Trace Index="30" Color="#CD9979"/>
+					<Trace Index="31" Color="#8791AA"/>
+					<Trace Index="32" Color="#E8D192"/>
+				</TraceDefaults>
+				<PlantSpecificIntervals BaseDate="1995-01-01T00:00:00">
+					<Interval Name="Second" Plural="Seconds" Description="System Defined Second" Offset="0S" Duration="1S" ResampleInterval="1S" SmallStepSize="1S" LargeStepSize="1M" Moniker="S" EnableSnapToInterval="0" TimeSelectNext="0" TimeSelectCurrent="0" TimeSelectLast="0" SystemDefined="1"/>
+					<Interval Name="Minute" Plural="Minutes" Description="System Defined Minute" Offset="0S" Duration="1M" ResampleInterval="1M" SmallStepSize="1M" LargeStepSize="1H" Moniker="M" EnableSnapToInterval="0" TimeSelectNext="0" TimeSelectCurrent="0" TimeSelectLast="0" SystemDefined="1"/>
+					<Interval Name="Hour" Plural="Hours" Description="System Defined Hour" Offset="0S" Duration="1H" ResampleInterval="1H" SmallStepSize="1H" LargeStepSize="1D" Moniker="H" EnableSnapToInterval="0" TimeSelectNext="1" TimeSelectCurrent="1" TimeSelectLast="1" SystemDefined="1"/>
+					<Interval Name="Day" Plural="Days" Description="System Defined Day" Offset="0S" Duration="1D" ResampleInterval="1D" SmallStepSize="1D" LargeStepSize="7D" Moniker="D" EnableSnapToInterval="1" TimeSelectNext="1" TimeSelectCurrent="1" TimeSelectLast="1" SystemDefined="1"/>
+					<Interval Name="Week" Plural="Weeks" Description="System Defined Week" Offset="0S" Duration="7D" ResampleInterval="7D" SmallStepSize="7D" LargeStepSize="30D" Moniker="W" EnableSnapToInterval="1" TimeSelectNext="1" TimeSelectCurrent="1" TimeSelectLast="1" SystemDefined="1"/>
+					<Interval Name="Month" Plural="Months" Description="System Defined Month" Offset="0S" Duration="1MO" ResampleInterval="1MO" SmallStepSize="1MO" LargeStepSize="1Y" Moniker="MO" EnableSnapToInterval="1" TimeSelectNext="1" TimeSelectCurrent="1" TimeSelectLast="1" SystemDefined="1"/>
+					<Interval Name="Year" Plural="Years" Description="System Defined Year" Offset="0S" Duration="1Y" ResampleInterval="1Y" SmallStepSize="1Y" LargeStepSize="2Y" Moniker="Y" EnableSnapToInterval="0" TimeSelectNext="1" TimeSelectCurrent="1" TimeSelectLast="1" SystemDefined="1"/>
+				</PlantSpecificIntervals>
+			</Data>
+		</ECCDataObject>
+	</DataObjects>
+</UWDataSource>
